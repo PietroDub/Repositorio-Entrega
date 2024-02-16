@@ -33,7 +33,7 @@ namespace AppVendasWeb.Controllers
 
             return View();
         }
-
+        //funcionalidade barra pesquisa final
         public IActionResult SelecionaCliente(Guid? id)
         {
             List<Cliente> listaClientes = _context.Cliente.Where(c => c.CadastroAtivo == true).ToList();
